@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import uuid from 'uuid/v4';
 
 const Formulario = () => {
     // Crear State de citas
@@ -34,6 +35,7 @@ const Formulario = () => {
         actualizarError(false);
 
         // Asignar un ID
+        cita.id = uuid();
 
         console.log('Enviando');
     };
