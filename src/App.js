@@ -28,9 +28,12 @@ function App() {
         guardarCitas(nuevasCitas);
     };
 
+    // Mensaje condicional
+    const titulo = citas.length !== 0 ? 'Administra tus citas' : 'Agrega una nueva cita'
+
     return (
         <Fragment>
-            <h1>Administrador de pacientes</h1>
+            <h1 data-testid="nombre-app">Administrador de pacientes</h1>
 
             <div className="container">
                 <div className="row">
@@ -38,7 +41,7 @@ function App() {
                         <Formulario crearCita={crearCita} />
                     </div>
                     <div className="one-half column">
-                        {citas.length !== 0 ? <h2>Administra tus citas</h2> : <h2>Agrega una nueva cita</h2>}
+                        <h2 data-testid="titulo-dinamico">{titulo}</h2>
 
                         {citas.map(cita => (
                             <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />

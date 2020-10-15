@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <App /> Verificar las citas en el DOM 1`] = `
+Array [
+  <div
+    class="cita"
+    data-testid="cita"
+  >
+    <p>
+      Mascota: 
+      <span>
+        Hook
+      </span>
+    </p>
+    <p>
+      Dueño: 
+      <span>
+        Jorge
+      </span>
+    </p>
+    <p>
+      Fecha: 
+      <span>
+        2020-10-14
+      </span>
+    </p>
+    <p>
+      Hora: 
+      <span>
+        11:30
+      </span>
+    </p>
+    <p>
+      Síntomas: 
+      <span>
+        Vomita cada que come
+      </span>
+    </p>
+    <button
+      class="button eliminar u-full-width"
+      data-testid="btn-eliminar"
+    >
+      Eliminar ×
+    </button>
+  </div>,
+]
+`;
